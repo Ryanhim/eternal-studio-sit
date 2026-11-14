@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f2efe8">
+<meta name="description" content="ETERNAL is an independent visual identity studio creating distinctive brands.">
+<title>ETERNAL | Creative Studio</title>
+<style>
+:root {
+  --black:#171715;
+  --ivory:#f2efe8;
+  --stone:#a9a397;
+  --acid:#d8f36a;
+}
+* {box-sizing:border-box}
+html {scroll-behavior:smooth}
+body {
+  margin:0;
+  background:var(--ivory);
+  color:var(--black);
+  font-family:Arial,sans-serif;
+}
+a {color:inherit;text-decoration:none}
+.wrap {width:min(1100px,88%);margin:auto}
+.top {
+  background:var(--black);
+  color:var(--ivory);
+  text-align:center;
+  padding:11px;
+  font-size:10px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 0;
+  border-bottom:1px solid #ccc6ba;
+}
+.wordmark {
+  font: bold 31px Georgia,serif;
+  letter-spacing:5px;
+}
+.links {display:flex;gap:22px;font-size:11px;letter-spacing:1px;text-transform:uppercase}
+.hero {
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:45px;
+  align-items:center;
+  padding:100px 0;
+}
+.eyebrow {
+  font-size:10px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+h1 {
+  font:clamp(54px,8vw,100px)/.95 Georgia,serif;
+  letter-spacing:-5px;
+  margin:25px 0;
+}
+h1 em {display:block;margin-left:25px}
+.lead {
+  max-width:460px;
+  color:#625e56;
+  line-height:1.9;
+  font-size:15px;
+}
+.button {
+  display:inline-block;
+  background:var(--black);
+  color:var(--ivory);
+  padding:17px 23px;
+  margin-top:20px;
+  font-size:10px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+.symbol {
+  min-height:390px;
+  background:var(--black);
+  display:grid;
+  place-items:center;
+  position:relative;
+}
+.symbol svg {width:60%;max-width:260px}
+.symbol small {
+  position:absolute;
+  bottom:20px;
+  color:var(--stone);
+  font:italic 15px Georgia,serif;
+}
+.ticker {
+  background:var(--acid);
+  padding:17px;
+  text-align:center;
+  font-size:10px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+section {padding:85px 0;border-bottom:1px solid #ccc6ba}
+h2 {
+  font:clamp(40px,6vw,68px)/1 Georgia,serif;
+  letter-spacing:-3px;
+  margin:18px 0;
+}
+.intro {
+  max-width:440px;
+  color:#625e56;
+  font-size:13px;
+  line-height:1.8;
+}
+.cards,.services {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:35px;
+}
+.art {
+  aspect-ratio:1/1.15;
+  padding:22px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  background:#d9d0c0;
+}
+.art strong {
+  font:clamp(30px,4vw,49px)/.95 Georgia,serif;
+}
+.art span {
+  font-size:9px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+.card:nth-child(2) .art {background:#292925;color:white}
+.card:nth-child(3) .art {background:#c5c6b8}
+.card h3 {font:23px Georgia,serif;margin:17px 0 8px}
+.card p,.service p,.service li {
+  font-size:12px;
+  line-height:1.8;
+  color:#625e56;
+}
+.tag {
+  display:inline-block;
+  border:1px solid #aaa397;
+  padding:7px 9px;
+  font-size:9px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+.notice {
+  background:#e8e4db;
+  border-left:3px solid var(--acid);
+  padding:16px;
+  margin-top:25px;
+  font-size:11px;
+  line-height:1.7;
+}
+.service {
+  border:1px solid #c9c4b9;
+  padding:25px;
+}
+.service h3 {font:27px Georgia,serif;margin-top:35px}
+.price {color:var(--black)!important;font-weight:bold}
+.dark {background:var(--black);color:var(--ivory)}
+.dark .intro {color:#c4c0b7}
+.contact {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
+  align-items:center;
+}
+.email {
+  display:inline-block;
+  border-bottom:1px solid var(--acid);
+  padding-bottom:8px;
+  margin-top:15px;
+  font:20px Georgia,serif;
+}
+footer {
+  padding:25px 0;
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  font-size:9px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color:#777166;
+}
+@media(max-width:700px) {
+  nav {align-items:flex-start;flex-direction:column;gap:18px}
+  .links {gap:14px;flex-wrap:wrap}
+  .hero {grid-template-columns:1fr;padding:60px 0;gap:30px}
+  .symbol {min-height:300px}
+  .cards,.services,.contact {grid-template-columns:1fr}
+  section {padding:60px 0}
+  footer {flex-direction:column}
+}
+</style>
+</head>
+<body>
+<div class="top">Independent Visual Identity Studio</div>
+
+<header class="wrap">
+<nav>
+<a class="wordmark" href="#home">ETERNAL</a>
+<div class="links">
+<a href="#work">Work</a>
+<a href="#services">Services</a>
+<a href="#studio">Studio</a>
+<a href="#contact">Inquire</a>
+</div>
+</nav>
+</header>
+
+<main id="home">
+<div class="wrap hero">
+<div>
+<div class="eyebrow">Independent Visual Identity Studio</div>
+<h1>MADE TO BE <em>UNMISTAKABLY YOURS.</em></h1>
+<p class="lead">We create thoughtful visual identities, original marks, and distinctive brand systems for emerging businesses and creators. Built with intention. Made to stand apart.</p>
+<a class="button" href="#contact">Start a project ↗</a>
+</div>
+
+<div class="symbol">
+<svg viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+<path d="M125 4V246 M4 125H246" stroke="#f2efe8" stroke-width="2"/>
+<path d="M125 4L125 246 M4 125L246 125" stroke="#d8f36a" stroke-width="1"/>
+<path d="M35 42H215L174 57V193L215 208H35L76 193V57Z" fill="none" stroke="#f2efe8" stroke-width="5"/>
+<path d="M125 42L145 105L208 125L145 145L125 208L105 145L42 125L105 105Z" fill="#f2efe8"/>
+</svg>
+<small>Originality has no template.</small>
+</div>
+</div>
+
+<div class="ticker">Originality has no template · Identity with intention</div>
+
+<section class="wrap" id="work">
+<div class="eyebrow">01 / Selected work</div>
+<h2>Ideas made visible.</h2>
+<p class="intro">A growing collection of self-initiated identity explorations. Each concept demonstrates a different approach to visual storytelling.</p>
+
+<div class="cards">
+<article class="card">
+<div class="art"><span>Concept 01 · Hospitality</span><strong>ORIGIN<br>COFFEE</strong><span>Ritual meets originality</span></div>
+<h3>ORIGIN COFFEE</h3>
+<p>A specialty coffee identity balancing quiet refinement with expressive details.</p>
+<span class="tag">Concept · In development</span>
+</article>
+<article class="card">
+<div class="art"><span>Concept 02 · Fitness</span><strong>IRON<br>CULTURE</strong><span>Strength in character</span></div>
+<h3>IRON CULTURE</h3>
+<p>A bold fitness identity built around community, discipline, and energy.</p>
+<span class="tag">Concept · In development</span>
+</article>
+<article class="card">
+<div class="art"><span>Concept 03 · Creative</span><strong>FORM<br>THEORY</strong><span>Structure without limits</span></div>
+<h3>FORM THEORY</h3>
+<p>An experimental creative label exploring typography and visual expression.</p>
+<span class="tag">Concept · In development</span>
+</article>
+</div>
+<div class="notice">These are self-initiated concept projects, not commissioned client work. Full case studies will be added as each identity is developed.</div>
+</section>
+
+<section class="wrap" id="services">
+<div class="eyebrow">02 / What we do</div>
+<h2>Built around your identity.</h2>
+<p class="intro">Focused creative services with clear scopes, thoughtful collaboration, and room for original ideas.</p>
+<div class="services">
+<article class="service">
+<div class="eyebrow">01 / Foundation</div>
+<h3>Signature Mark</h3>
+<p>A distinctive starting point for a brand ready to establish its visual presence.</p>
+<ul><li>Primary logo or emblem</li><li>Color and typography direction</li><li>Two revision rounds</li></ul>
+<p class="price">$175–$250 · Introductory</p>
+</article>
+<article class="service">
+<div class="eyebrow">02 / Full identity</div>
+<h3>Identity System</h3>
+<p>A cohesive visual language designed for real brand touchpoints.</p>
+<ul><li>Primary and secondary marks</li><li>Color and type system</li><li>Three social templates and mini guide</li></ul>
+<p class="price">$450–$650 · Introductory</p>
+</article>
+<article class="service">
+<div class="eyebrow">03 / Ongoing</div>
+<h3>Creative Partner</h3>
+<p>Consistent design support for brands that need a steady creative hand.</p>
+<ul><li>Four agreed monthly deliverables</li><li>Monthly planning</li><li>Defined scope and revisions</li></ul>
+<p class="price">$300–$500/month · Introductory</p>
+</article>
+</div>
+<p class="intro">Pricing is introductory. Final scope, timing, and deliverables are agreed before work begins.</p>
+</section>
+
+<section class="wrap" id="studio">
+<div class="eyebrow">03 / The studio</div>
+<h2>ORIGINALITY HAS<br>NO TEMPLATE.</h2>
+<p class="intro">ETERNAL is an independent visual identity studio focused on making brands feel unmistakably their own. We believe strong design begins with listening, curiosity, and a clear point of view. Every mark should have a reason to exist.</p>
+</section>
+
+<section class="dark" id="contact">
+<div class="wrap contact">
+<div>
+<div class="eyebrow">04 / Start a conversation</div>
+<h2>Have something<br>in mind?</h2>
+<p class="intro">Tell us what you're building, what you need, and where you want to take it. We'll start with a conversation.</p>
+<a class="email" href="mailto:hello.eternalstudio@gmail.com">hello.eternalstudio@gmail.com ↗</a>
+</div>
+<div>
+<div class="eyebrow">Project inquiries</div>
+<p class="intro">Email is the best way to begin. Include a little about your brand, the design support you're looking for, and your ideal timeline.</p>
+<a class="button" style="background:#d8f36a;color:#171715" href="mailto:hello.eternalstudio@gmail.com?subject=ETERNAL%20Project%20Inquiry">Email the studio ↗</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="wrap">
+<span>© 2026 ETERNAL Creative Studio</span>
+<span>Made to be unmistakably yours.</span>
+<span>Syracuse, New York</span>
+</footer>
+</body>
+</html>
